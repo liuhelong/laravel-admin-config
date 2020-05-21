@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Config;
+namespace Liuhelong\Config;
 
 use Encore\Admin\Admin;
 use Encore\Admin\Extension;
@@ -42,7 +42,7 @@ class Config extends Extension
             /* @var \Illuminate\Routing\Router $router */
             $router->resource(
                 config('admin.extensions.config.name', 'config'),
-                config('admin.extensions.config.controller', 'Encore\Admin\Config\ConfigController')
+                config('admin.extensions.config.controller', 'Liuhelong\Config\ConfigController')
             );
         });
     }
