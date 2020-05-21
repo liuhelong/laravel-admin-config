@@ -3,7 +3,7 @@
     "description": "Config extension for laravel-admin",
     "type": "library",
     "keywords": ["laravel-admin", "setting"],
-    "homepage": "https://github.com/liuhelong/config",
+    "homepage": "https://github.com/liuhelong/laravel-admin-config",
     "license": "MIT",
     "authors": [
         {
@@ -22,13 +22,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Encore\\Admin\\Config\\": "src/"
+            "Liuhelong\\Config\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Encore\\Admin\\Config\\ConfigServiceProvider"
+                "Liuhelong\\Config\\ConfigServiceProvider"
             ]
         }
     }
