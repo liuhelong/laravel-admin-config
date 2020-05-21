@@ -81,15 +81,15 @@ class ConfigController
             return "<a tabindex=\"0\" class=\"btn btn-xs btn-twitter\" role=\"button\" data-toggle=\"popover\" data-html=true title=\"Usage\" data-content=\"<code>config('$name');</code>\">$name</a>";
         });
 
-        $grid->('value','值')->display(function ($value, $column) {
+        $grid->column('value','值')->display(function ($value, $column) {
 			if ($this->type == 1) {
 				return $value;
 			}
 			return $column->image();
 		});
-        $grid->('description','描述');
-        $grid->('created_at','创建时间')->hide();
-        $grid->('updated_at','更新时间')->hide();
+        $grid->column('description','描述');
+        $grid->column('created_at','创建时间')->hide();
+        $grid->column('updated_at','更新时间')->hide();
 
         $grid->filter(function ($filter) {
             $filter->disableIdFilter();
