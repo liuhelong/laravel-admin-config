@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Config;
+namespace Liuhelong\Config;
 
 use Illuminate\Database\Eloquent\Model;
 
