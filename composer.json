@@ -1,5 +1,5 @@
 {
-    "name": "liuhelong/config",
+    "name": "liuhelong/laravel-admin-config",
     "description": "Config extension for laravel-admin",
     "type": "library",
     "keywords": ["laravel-admin", "setting"],
