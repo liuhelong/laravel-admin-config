@@ -22,7 +22,7 @@ Open `app/Providers/AppServiceProvider.php`, and call the `Config::load()` metho
 
 namespace App\Providers;
 
-use Encore\Admin\Config\Config;
+use Liuhelong\Config\Config;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 
