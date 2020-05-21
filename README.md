@@ -10,7 +10,7 @@ prower by https://github.com/laravel-admin-extensions/config
 ## Installation
 
 ```
-$ composer require liuhelong/config
+$ composer require liuhelong/laravel-admin-config
 
 $ php artisan migrate
 ```
