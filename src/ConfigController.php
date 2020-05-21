@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Config;
+namespace Liuhelong\Config;
 
 use Encore\Admin\Controllers\HasResourceActions;
 use Encore\Admin\Facades\Admin;
