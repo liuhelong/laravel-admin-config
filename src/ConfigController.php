@@ -85,7 +85,7 @@ class ConfigController
 			if ($this->type == 1) {
 				return $value;
 			}
-			return $column->image();
+			//return $column->image();
 		});
         $grid->column('description','描述');
         $grid->column('created_at','创建时间')->hide();
@@ -94,7 +94,7 @@ class ConfigController
         $grid->filter(function ($filter) {
             $filter->disableIdFilter();
             $filter->like('name','键值');
-            $filter->like('value','值');
+            //$filter->like('value','值');
         });
 
         return $grid;
@@ -104,10 +104,10 @@ class ConfigController
     {
         $form = new Form(new ConfigModel());
 
-        $form->radio('type','类型')->options(['1'=>'文字','2'=>'图片'])->default(1)->required();
+        $form->radio('type','类型')->options(['1'=>'文字','2'=>'文件'])->default(1)->required();
 		$form->text('name','键值')->required();
 		$form->textarea('value','值')->help('文字选填这个');;
-		$form->image('image','图片')->help('图片选填这个');
+		$form->image('file','文件')->help('文件选填这个');
 		$form->textarea('description','描述');
 
         return $form;
