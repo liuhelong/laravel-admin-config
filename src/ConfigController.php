@@ -107,7 +107,7 @@ class ConfigController
         $form->radio('type','类型')->options(['1'=>'文字','2'=>'文件'])->default(1)->required();
 		$form->text('name','键值')->required();
 		$form->textarea('value','值')->help('文字选填这个');;
-		$form->image('file','文件')->help('文件选填这个');
+		$form->file('file','文件')->help('文件选填这个');
 		$form->textarea('description','描述');
 
         return $form;
