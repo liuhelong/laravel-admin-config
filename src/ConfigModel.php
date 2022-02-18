@@ -3,6 +3,7 @@
 namespace Liuhelong\Config;
 
 use Illuminate\Database\Eloquent\Model;
+use Storage;
 
 class ConfigModel extends Model
 {
@@ -35,7 +36,13 @@ class ConfigModel extends Model
     }
     public function setFileAttribute($value)
     {
-        $this->attributes['value'] = $value;
+        if(url()->isValidUrl($value)){
+			$path = $value;
+		}else{
+			$path = Storage::disk('admin')->url($value);
+		}
+		
+        $this->attributes['value'] = $path;
     }
 	public function getFileAttribute()
     {
